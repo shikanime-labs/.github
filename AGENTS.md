@@ -1,7 +1,7 @@
 # GitHub
 
-Organization profile and metadata for X-Shikanime.
-Contains the public README, shared GitHub configuration, and organizational assets.
+Organization profile and metadata for X-Shikanime. Contains the public README,
+shared GitHub configuration, and organizational assets.
 
 **Language:** Nix
 
