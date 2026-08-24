@@ -1,6 +1,6 @@
-![X-Shikanime](https://raw.githubusercontent.com/x-shikanime/.github/main/assets/github-header.webp)
+![Shikanime](https://raw.githubusercontent.com/shikanime-labs/.github/main/assets/github-header.webp)
 
-# X-Shikanime
+# Shikanime
 
 > "What separates us from the stars is not distance, but time."
 
