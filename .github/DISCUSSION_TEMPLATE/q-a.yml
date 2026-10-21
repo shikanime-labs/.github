@@ -1,0 +1,18 @@
+q-a:
+  name: Question
+  description: Pose a question about the infrastructure, the fleet, or a repository.
+  body:
+    - type: textarea
+      id: question
+      attributes:
+        label: Question
+        description: What would you like to know? Include what you already tried.
+      validations:
+        required: true
+
+    - type: textarea
+      id: references
+      attributes:
+        label: References
+        description: Tickets, PRs, discussions or documents associated — anything that gives context. Leave empty if none.
+        placeholder: https://github.com/...
