@@ -9,7 +9,6 @@ q-a:
         description: What would you like to know? Include what you already tried.
       validations:
         required: true
-
     - type: textarea
       id: references
       attributes:
