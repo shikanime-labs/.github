@@ -23,7 +23,7 @@ Contains the public README, shared GitHub configuration, and organizational asse
 - Require signed commits
 - Squash+rebase merge only
 
-*Informational repo; changes are mostly to the org profile README*
+Informational repo; changes are mostly to the org profile README
 
 ## Stack Workflow
 
