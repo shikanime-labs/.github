@@ -1,6 +1,5 @@
-name: 🧪 Experiment
+name: Experiment
 description: Test a hypothesis spun off from a parent issue, recording observations instead of flooding the parent with comments.
-title: "🧪 [EXPERIMENT] <title>"
 labels: [question]
 body:
   - type: textarea

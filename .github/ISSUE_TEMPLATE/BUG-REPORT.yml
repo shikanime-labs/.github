@@ -1,6 +1,5 @@
-name: 🐛 Bug report
+name: Bug report
 description: Report a behavior that does not match what is expected.
-title: "🐛 [BUG] <title>"
 labels: [bug]
 body:
   - type: textarea
@@ -35,18 +34,6 @@ body:
         - Workload (namespace/name):
         - Revision (Flux KS or commit):
       render: bash
-    validations:
-      required: true
-
-  - type: dropdown
-    id: recurrence
-    attributes:
-      label: Recurrence
-      description: Has this bug happened before? If yes, link the previous tickets in Evidence.
-      options:
-        - No, first occurrence
-        - Yes, reported at least once
-        - Yes, reported multiple times
     validations:
       required: true
 

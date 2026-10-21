@@ -1,6 +1,5 @@
-name: 📋 Task
+name: Task
 description: Track a piece of well-understood work that needs doing.
-title: "📋 [TASK] <title>"
 body:
   - type: textarea
     id: task

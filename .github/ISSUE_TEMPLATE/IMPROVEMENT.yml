@@ -1,6 +1,5 @@
-name: 🔧 Improvement request
+name: Improvement request
 description: Improve an existing thing without changing its purpose.
-title: "🔧 [IMPROVEMENT] <title>"
 labels: [enhancement]
 body:
   - type: textarea
@@ -18,17 +17,5 @@ body:
       label: Expected improvement
       description: Describe the behavior or state expected after the improvement.
       placeholder: After the improvement, ...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: recurrence
-    attributes:
-      label: Recurrence
-      description: Has this improvement need come up before? If yes, list the previous tickets in Expected improvement.
-      options:
-        - No, first occurrence
-        - Yes, reported at least once
-        - Yes, reported multiple times
     validations:
       required: true
