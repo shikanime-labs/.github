@@ -29,7 +29,7 @@ body:
     attributes:
       label: Environment
       description: Pin the context the problem was observed in.
-      value: |
+      placeholder: |
         - Cluster:
         - Workload (namespace/name):
         - Revision (Flux KS or commit):

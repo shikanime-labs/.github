@@ -16,8 +16,7 @@ body:
     attributes:
       label: Demands
       description: List the requirements the solution must satisfy regardless of the experiment outcome.
-      value: |
-        - [ ] ...
+      placeholder: "- [ ] ..."
     validations:
       required: true
 

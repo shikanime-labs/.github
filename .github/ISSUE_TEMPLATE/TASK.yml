@@ -24,7 +24,6 @@ body:
     attributes:
       label: Definition of done
       description: List the conditions that will allow this task to be considered complete.
-      value: |
-        - [ ] ...
+      placeholder: "- [ ] ..."
     validations:
       required: true
