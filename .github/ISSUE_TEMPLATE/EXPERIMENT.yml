@@ -1,5 +1,5 @@
 name: Experiment
-description: Test a hypothesis spun off from a parent issue, recording observations instead of flooding the parent with comments.
+description: Test a hypothesis spun off from a parent issue.
 labels: [question]
 body:
   - type: textarea
@@ -26,15 +26,6 @@ body:
       placeholder: Measure ..., compare ...
     validations:
       required: true
-  - type: textarea
-    id: observations
-    attributes:
-      label: Observations
-      description: Append one entry per pass with date, evidence and effect on the hypothesis. Update this field instead of growing comment threads on the parent issue.
-      value: |
-        - YYYY-MM-DD: ...
-    validations:
-      required: false
   - type: textarea
     id: references
     attributes:
