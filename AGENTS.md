@@ -1,51 +1,30 @@
 # GitHub
 
-Organization profile and metadata for X-Shikanime.
-Contains the public README, shared GitHub configuration, and organizational assets.
+Organization profile and shared configuration for the shikanime-labs org:
+public README, org-wide templates (issue, PR, discussion, CODEOWNERS),
+Renovate config, and reusable workflow snippets under `.github/workflows`.
 
-**Language:** Nix
+**Language:** Nix (flake-provided dev shell).
 
-## Structure
+## Environment
 
-- `README.md` — Organization profile README displayed on the GitHub org page
-- `workflows/` — Shared or template workflow configurations
+Direnv loads the flake shell automatically (`.envrc`); without it,
+`nix develop`. Run `nix fmt` before shipping — Markdown lines are wrapped
+at 80 columns.
 
 ## Commit Style
 
 - Plain-text capitalized title, no conventional-commit prefix
-- Body with labels: `Design:`, `Related:`, `Closes #`
-- Keep Markdown lines wrapped at 80 columns and run `nix fmt` before shipping
+- Body labels: `Design:`, `Related:`, `Closes #`
 
-## Protect `main`
+## Landing
 
-- Require 1 approving review
-- Require linear history (no merge commits)
-- Require signed commits
-- Squash+rebase merge only
+`main` is protected: one approving review, linear history, signed
+commits, squash-merge only. Informational repo — changes are mostly to
+the org profile README.
 
-Informational repo; changes are mostly to the org profile README
+## Agent context
 
-## Stack Workflow
-
-- Install the official GitHub extension once: `gh extension install github/gh-stack`
-  (requires GitHub CLI ≥ 2.0; `gh stack` is in public preview and may change).
-- Keep one logical change per PR; split large work into a stack of PRs.
-- Create a stack: `gh stack init`, then `gh stack add` for each new branch, and
-  commit on the active branch. `gh stack view` lists the stack.
-- Submit/update: `gh stack submit` (add `--open` to open PRs, `--auto` to skip
-  prompts). Resubmit after each change to refresh titles, bodies, and branches.
-- Pull down an existing stack: `gh stack checkout <PR_NUMBER>` (also accepts a
-  stack number, PR URL, or branch name).
-- Rebase onto updated trunk: `gh stack rebase` (cascading), then `gh stack submit`.
-- Land a stack: `gh stack merge` (interactive) or
-  `gh stack merge <PR_NUMBER> --yes --squash` to merge up to a PR.
-- Never `gh pr merge` on a stacked PR — only `gh stack merge` lands stacks.
-- Never force-push stack branches; `gh stack` owns the branch pointers.
-
-## Environment
-
-This repository ships a `.envrc` for direnv. Run `direnv allow` once after
-cloning; direnv then loads the Nix flake dev shell automatically on every
-directory change (`.envrc` runs
-`use flake . --accept-flake-config --no-pure-eval`). Without direnv, enter
-the same shell manually with `nix develop`.
+Before restructuring any repo's agent context (AGENTS.md placement, docs
+pointers, skill seeding), read `docs/progressive-disclosure.md` — the org
+standard for tiered context loading.
