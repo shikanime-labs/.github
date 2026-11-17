@@ -16,6 +16,9 @@ at 80 columns.
 
 - Plain-text capitalized title, no conventional-commit prefix
 - Body labels: `Design:`, `Related:`, `Closes #`
+- Bot PRs: the reviewer takes the lead — the bot author never acts on
+  review comments, so apply the verdict at review time (merge clean PRs,
+  fix or close broken ones) instead of commenting and waiting.
 
 ## Landing
 
